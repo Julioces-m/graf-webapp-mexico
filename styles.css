@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #f4f4f4, #dcdcdc);
+    margin: 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Bandera */
+.flag {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+/* Contenedor de cada color */
+.color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+}
+
+/* Recuadros de color */
+.color-box {
+    width: 100%;
+    height: 300px; /* Tamaño fijo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Colores iniciales */
+#green-box {
+    background-color: #009900;
+}
+
+#red-box {
+    background-color: #9D0000;
+}
+
+.white-box {
+    background-color: #FFFFFF;
+}
+
+/* Imagen del escudo */
+.white-box img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en la imagen */
+.white-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Información debajo de los recuadros */
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para los textos */
+.meaning {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hex-code {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Estilos para los sliders */
+input[type="range"] {
+    width: 120px;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}

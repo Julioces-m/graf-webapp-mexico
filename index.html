@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🇲🇽 Bandera de México Interactiva 🇲🇽</h1>
+        
+        <div class="flag">
+            <!-- Recuadro Verde -->
+            <div class="color-container">
+                <div class="color-box" id="green-box"></div>
+                <div class="info">
+                    <p class="meaning">💚 Esperanza</p>
+                    <p class="hex-code" id="green-hex">#009900</p>
+                    <input type="range" id="green-slider" min="0" max="255" value="153">
+                </div>
+            </div>
+
+            <!-- Recuadro Blanco con Escudo -->
+            <div class="color-container">
+                <div class="color-box white-box">
+                    <a href="https://seeklogo.com/images/E/ESCUDO_BANDERA_MEXICANA-logo-EF849B4B13-seeklogo.com.png" target="_blank">
+                        <img src="https://seeklogo.com/images/E/ESCUDO_BANDERA_MEXICANA-logo-EF849B4B13-seeklogo.com.png" 
+                             alt="Escudo Nacional">
+                    </a>
+                </div>
+                <div class="info">
+                    <p class="meaning">⚪ Unidad</p>
+                    <p class="hex-code">#FFFFFF</p>
+                </div>
+            </div>
+
+            <!-- Recuadro Rojo -->
+            <div class="color-container">
+                <div class="color-box" id="red-box"></div>
+                <div class="info">
+                    <p class="meaning">❤️ Sangre de los héroes</p>
+                    <p class="hex-code" id="red-hex">#9D0000</p>
+                    <input type="range" id="red-slider" min="0" max="255" value="157">
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de página con los nombres -->
+        <footer>
+            <p>21200527 Luis Rodrigo del Villar Morales</p>
+            <p>22200752 Julio Cesar Meneses Oropeza</p>
+            <p>22200760 Jose Efren Quintanilla Morales</p>
+            <p>22200732 Mario Garcia Terrazas</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
